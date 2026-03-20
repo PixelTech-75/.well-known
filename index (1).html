@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATTEO.COM - The Official Matteo Valdez Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(circle, #4f46e5 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .reservation-form {
+            backdrop-filter: blur(10px);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-indigo-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-user-astronaut text-2xl"></i>
+                    <a href="#" class="text-2xl font-bold">MATTEO.COM</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-indigo-200 transition">About</a>
+                    <a href="#products" class="hover:text-indigo-200 transition">Products</a>
+                    <a href="#find" class="hover:text-indigo-200 transition">Find Matteo</a>
+                    <a href="#reserve" class="hover:text-indigo-200 transition">Reserve</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-pattern bg-indigo-500 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">MATTEO VALDEZ</h1>
+            <p class="text-xl md:text-2xl mb-8">Student • Model • Famous</p>
+            <div class="flex justify-center">
+                <img src="https://t4.ftcdn.net/jpg/03/86/82/73/360_F_386827376_uWOOhKGk6A4UVL5imUBt20Bh8cmODqzx.jpg" alt="Matteo Valdez" class="rounded-full border-4 border-white shadow-xl floating w-48 h-48 object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">About Matteo</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://media.gettyimages.com/id/514408643/photo/musicians-playing-in-mariachi-band-san-miguel-de-allende-guanajuato-mexico.jpg?s=612x612&w=gi&k=20&c=RpwJqb0wOPJ197RtIeNbhqkzJn73oKv6fxZJI0PQpn4=
+                    " alt="Matteo in action" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 mb-4 text-lg">
+                        Matteo Valdez is not just a student - he's a phenomenon. Known for his incredible intellect, charming personality, and interstellar connections, Matteo has become a legend in his own time.
+                    </p>
+                    <p class="text-gray-700 mb-4 text-lg">
+                        Whether he's dominating Geometry Dash, contributing to Wikipedia, or simply being the life of the classroom, Matteo brings joy and excitement wherever he goes.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        This website is dedicated to celebrating all things Matteo - from his academic achievements to his legendary status among peers.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-indigo-50 p-6 rounded-lg shadow">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Academic Excellence</h3>
+                    <p class="text-gray-700">Matteo consistently achieves top marks while maintaining his legendary status.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg shadow">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Gaming Prowess</h3>
+                    <p class="text-gray-700">A Geometry Dash master with skills that defy human comprehension.</p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg shadow">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Legendary Status</h3>
+                    <p class="text-gray-700">Revered by peers and teachers alike for his unique personality and talents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">Matteo Merchandise</h2>
+            <p class="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
+                Own a piece of Matteo history with our exclusive merchandise collection. Each item is carefully curated to bring you closer to the Matteo experience.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <img src="https://cdn2.oceansbridge.com/2019/03/18153104/Muchacho-Mexicano-also-known-as-Mexican-Boy-Alfredo-Ramos-Martinez-Oil-Painting.jpg" alt="Matteo Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Official Matteo Portrait</h3>
+                        <p class="text-gray-700 mb-3">High-quality print of Matteo's legendary visage.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$19.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <img src="https://shop.wildrepublic.com/cdn/shop/files/ptl8qh5egee4igwrolve_grande.jpg?v=1745602481" alt="Interstellar Plushie" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Interstellar Plushie</h3>
+                        <p class="text-gray-700 mb-3">Soft plushie inspired by Matteo's cosmic connections.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$24.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <img src="https://i.etsystatic.com/38744536/r/il/c3a87b/6544372234/il_fullxfull.6544372234_ktxf.jpg" alt="Signed Poster" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Signed Poster</h3>
+                        <p class="text-gray-700 mb-3">Authentic Matteo autograph on premium poster.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$29.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHMSQ-abfRM_w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672765878297?e=2147483647&v=beta&t=wKz8qwPQOcHOTM3sUzrPI_qVIrp4Ur3ZQ0KGtqs1FmM" alt="Mrs. Morris Picture" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Mrs. Morris Collection</h3>
+                        <p class="text-gray-700 mb-3">Exclusive pictures of Matteo's favorite teacher.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$14.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition font-bold">
+                    View All Products <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Matteo Section -->
+    <section id="find" class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">Where to Find Matteo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Platform 1 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-gamepad text-indigo-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Geometry Dash</h3>
+                        <p class="text-gray-600">Watch his incredible skills</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 2 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                        <i class="fab fa-reddit text-red-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Reddit</h3>
+                        <p class="text-gray-600">Read his legendary posts</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 3 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fab fa-discord text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Discord</h3>
+                        <p class="text-gray-600">Join his server</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 4 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-graduation-cap text-green-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Canvas</h3>
+                        <p class="text-gray-600">See his academic work</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 5 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-chalkboard-teacher text-purple-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Morris.COM</h3>
+                        <p class="text-gray-600">Visit his favorite teacher's site</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 6 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-globe text-yellow-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Soubasis.COM</h3>
+                        <p class="text-gray-600">Explore another dimension</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 7 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-orange-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-pizza-slice text-orange-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">CP (Cheese Pizza)</h3>
+                        <p class="text-gray-600">His favorite food platform</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 8 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fab fa-wikipedia-w text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Wikipedia</h3>
+                        <p class="text-gray-600">Read his contributions</p>
+                    </div>
+                </a>
+                
+                <!-- Platform 9 -->
+                <a href="#" class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex items-center">
+                    <div class="bg-gray-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-file-pdf text-gray-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">PDF Files</h3>
+                        <p class="text-gray-600">Access his documents</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reserve" class="py-16 bg-indigo-600 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-400 to-purple-500"></div>
+        </div>
+        <div class="container mx-auto px-4 relative">
+            <h2 class="text-3xl font-bold text-center mb-12">Reserve Matteo</h2>
+            <p class="text-center text-indigo-100 mb-8 max-w-2xl mx-auto">
+                For the first time ever, you can reserve Matteo's time for your personal needs. Whether you need tutoring, gaming advice, or just want to hang out with a legend, this is your chance!
+            </p>
+            
+            <div class="max-w-2xl mx-auto bg-white bg-opacity-10 rounded-xl p-8 reservation-form">
+                <div class="mb-6 text-center">
+                    <div class="inline-block bg-indigo-700 rounded-full p-4 mb-4">
+                        <i class="fas fa-clock text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Only $4 per hour</h3>
+                    <p class="text-indigo-200">The best $4 you'll ever spend</p>
+                </div>
+                
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-indigo-700 bg-opacity-50 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-indigo-700 bg-opacity-50 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="date" class="block mb-2 font-medium">Date</label>
+                            <input type="date" id="date" class="w-full px-4 py-2 rounded bg-indigo-700 bg-opacity-50 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="hours" class="block mb-2 font-medium">Hours</label>
+                            <select id="hours" class="w-full px-4 py-2 rounded bg-indigo-700 bg-opacity-50 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white">
+                                <option value="1">1 hour ($4)</option>
+                                <option value="2">2 hours ($8)</option>
+                                <option value="3">3 hours ($12)</option>
+                                <option value="4">4 hours ($16)</option>
+                                <option value="5">5 hours ($20)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <label for="purpose" class="block mb-2 font-medium">Purpose</label>
+                        <textarea id="purpose" rows="3" class="w-full px-4 py-2 rounded bg-indigo-700 bg-opacity-50 border border-indigo-500 focus:outline-none focus:ring-2 focus:ring-white" placeholder="Why do you want to reserve Matteo?"></textarea>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <button type="submit" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-bold hover:bg-indigo-100 transition">
+                            Reserve Now <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-indigo-600">What People Say About Matteo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHMSQ-abfRM_w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672765878297?e=2147483647&v=beta&t=wKz8qwPQOcHOTM3sUzrPI_qVIrp4Ur3ZQ0KGtqs1FmM" alt="Person" class="rounded-full w-12 h-12 mr-4">
+                        <div>
+                            <h4 class="font-bold">Mrs. Morris</h4>
+                            <p class="text-gray-600 text-sm">Teacher</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Matteo is the most extraordinary student I've ever had the privilege to teach. His insights are cosmic and his presence is electrifying."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Logo_of_Geometry_Dash.svg/1200px-Logo_of_Geometry_Dash.svg.png" alt="Person" class="rounded-full w-12 h-12 mr-4">
+                        <div>
+                            <h4 class="font-bold">Geometry Dash Pro</h4>
+                            <p class="text-gray-600 text-sm">Gaming Colleague</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "I thought I was good at Geometry Dash until I saw Matteo play. He defies the laws of physics with his skills. Simply unbelievable."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <img src="https://ewscripps.brightspotcdn.com/dims4/default/8945af0/2147483647/strip/true/crop/520x293+0+174/resize/1280x720!/quality/90/?url=https%3A%2F%2Fmediaassets.wtxl.com%2Fwtxl.com%2Fcontent%2Ftncms%2Fassets%2Fv3%2Feditorial%2F4%2F8b%2F48bff90a-45f7-11e7-9ebd-f7266a829643%2F592eae1d70a64.image.jpg" alt="Person" class="rounded-full w-12 h-12 mr-4">
+                        <div>
+                            <h4 class="font-bold">Classmate</h4>
+                            <p class="text-gray-600 text-sm">Peer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Matteo makes every day at school an adventure. Whether he's explaining complex concepts or just being himself, he's truly one of a kind."
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-user-astronaut mr-2"></i> MATTEO.COM
+                    </h3>
+                    <p class="text-gray-400">
+                        The official website dedicated to Matteo Valdez, student extraordinaire and interstellar legend.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#find" class="text-gray-400 hover:text-white transition">Find Matteo</a></li>
+                        <li><a href="#reserve" class="text-gray-400 hover:text-white transition">Reserve</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-reddit"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-wikipedia-w"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-2">Stay updated on all things Matteo!</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l bg-gray-800 text-white focus:outline-none w-full">
+                        <button class="bg-indigo-600 px-4 py-2 rounded-r hover:bg-indigo-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 MATTEO.COM. All rights reserved. Not affiliated with Matteo Valdez himself (but he probably approves).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center hidden" id="mobileMenu">
+        <div class="text-center">
+            <button class="absolute top-4 right-4 text-white text-2xl" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="space-y-6 text-2xl">
+                <a href="#about" class="block text-white hover:text-indigo-300 transition">About</a>
+                <a href="#products" class="block text-white hover:text-indigo-300 transition">Products</a>
+                <a href="#find" class="block text-white hover:text-indigo-300 transition">Find Matteo</a>
+                <a href="#reserve" class="block text-white hover:text-indigo-300 transition">Reserve</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.remove('hidden');
+        });
+        
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.add('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+        
+        // Calculate reservation cost
+        document.getElementById('hours').addEventListener('change', function() {
+            const hours = parseInt(this.value);
+            const cost = hours * 4;
+            document.querySelector('#reserve h3').textContent = `Only $${cost} total`;
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Pixl-Hat-lol-orca/matteodotcom" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
